@@ -7,115 +7,115 @@
    =================================== */
 
 body, html { background: transparent !important; }
-.controller.ps {
+.custom {
   position: relative;
   width: 1100px; height: 650px;
   background: url(assets/base.png) no-repeat 0 0 / contain !important;
 }
 
 /* Face buttons */
-.controller.ps .button.triangle {
+.custom .button.triangle {
   position:absolute; width:96px; height:96px; top:180px; left:735px;
   background:url(assets/triangle.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .button.triangle.pressed { opacity:1; }
+.custom .button.triangle.pressed { opacity:1; }
 
-.controller.ps .button.circle {
+.custom .button.circle {
   position:absolute; width:96px; height:96px; top:230px; left:790px;
   background:url(assets/circle.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .button.circle.pressed { opacity:1; }
+.custom .button.circle.pressed { opacity:1; }
 
 .controller.ps .button.cross {
   position:absolute; width:96px; height:96px; top:285px; left:735px;
   background:url(assets/cross.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .button.cross.pressed { opacity:1; }
+.custom .button.cross.pressed { opacity:1; }
 
-.controller.ps .button.square {
+.custom .button.square {
   position:absolute; width:96px; height:96px; top:230px; left:680px;
   background:url(assets/square.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .button.square.pressed { opacity:1; }
+.custom .button.square.pressed { opacity:1; }
 
 /* D-Pad */
-.controller.ps .dpad .up {
+.custom .dpad .up {
   position:absolute; width:90px; height:90px; top:235px; left:285px;
   background:url(assets/dpad_up.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .dpad .up.pressed { opacity:1; }
+.custom .dpad .up.pressed { opacity:1; }
 
-.controller.ps .dpad .down {
+.custom .dpad .down {
   position:absolute; width:90px; height:90px; top:330px; left:285px;
   background:url(assets/dpad_down.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .dpad .down.pressed { opacity:1; }
+.custom .dpad .down.pressed { opacity:1; }
 
-.controller.ps .dpad .left {
+.custom .dpad .left {
   position:absolute; width:90px; height:90px; top:283px; left:235px;
   background:url(assets/dpad_left.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .dpad .left.pressed { opacity:1; }
+.custom .dpad .left.pressed { opacity:1; }
 
-.controller.ps .dpad .right {
+.custom .dpad .right {
   position:absolute; width:90px; height:90px; top:283px; left:335px;
   background:url(assets/dpad_right.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .dpad .right.pressed { opacity:1; }
+.custom .dpad .right.pressed { opacity:1; }
 
 /* Sticks (click states) */
-.controller.ps .stick.left.pressed {
+.custom .stick.left.pressed {
   position:absolute; width:96px; height:96px; top:360px; left:365px;
   background:url(assets/ls.png) no-repeat center/contain; opacity:1;
 }
-.controller.ps .stick.right.pressed {
+.custom .stick.right.pressed {
   position:absolute; width:96px; height:96px; top:360px; left:610px;
   background:url(assets/rs.png) no-repeat center/contain; opacity:1;
 }
 
 /* Bumpers & Triggers */
-.controller.ps .bumper.left {
+.custom .bumper.left {
   position:absolute; width:130px; height:60px; top:95px; left:250px;
   background:url(assets/l1.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .bumper.left.pressed { opacity:1; }
+.custom .bumper.left.pressed { opacity:1; }
 
-.controller.ps .bumper.right {
+.custom .bumper.right {
   position:absolute; width:130px; height:60px; top:95px; left:720px;
   background:url(assets/r1.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .bumper.right.pressed { opacity:1; }
+.custom .bumper.right.pressed { opacity:1; }
 
-.controller.ps .trigger.left .value {
+.custom .trigger.left .value {
   position:absolute; width:130px; height:60px; top:40px; left:250px;
   background:url(assets/l2.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .trigger.left.pressed .value { opacity:1; }
+.custom .trigger.left.pressed .value { opacity:1; }
 
 .controller.ps .trigger.right .value {
   position:absolute; width:130px; height:60px; top:40px; left:720px;
   background:url(assets/r2.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .trigger.right.pressed .value { opacity:1; }
+.custom .trigger.right.pressed .value { opacity:1; }
 
 /* Share / Options */
-.controller.ps .back {
+.custom .back {
   position:absolute; width:100px; height:50px; top:215px; left:470px;
   background:url(assets/share.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .back.pressed { opacity:1; }
+.custom .back.pressed { opacity:1; }
 
-.controller.ps .start {
+.custom .start {
   position:absolute; width:110px; height:50px; top:215px; left:560px;
   background:url(assets/options.png) no-repeat center/contain; opacity:0;
 }
-.controller.ps .start.pressed { opacity:1; }
+.custom .start.pressed { opacity:1; }
 
 /* Leaf sparkle overlay when any button is pressed (optional flourish) */
-.controller.ps .pressed::after {
+.custom .pressed::after {
   content:""; position:absolute; inset:0; background:url(assets/leaf.png) no-repeat 60% 30% / 70px 70px;
   opacity:.0; transition:opacity .15s ease;
 }
-.controller.ps .pressed.pressed::after { opacity:.85; }
+.custom .pressed.pressed::after { opacity:.85; }
 
 .watermark { display:none !important; }
