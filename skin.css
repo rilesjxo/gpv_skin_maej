@@ -6,116 +6,126 @@
    https://gamepadviewer.com/?p=1&css=YOUR_URL/skin.css
    =================================== */
 
-body, html { background: transparent !important; }
-.custom {
-  position: relative;
-  width: 1100px; height: 650px;
-  background: url(assets/base.png) no-repeat 0 0 / contain !important;
+body { 
+    background-color: #000000; 
+    background-color: RGBA(0, 0, 0, 0); 
+    margin: 0 auto; 
+    overflow: hidden; 
+} .controller.xbox{
+    background: url(https://i.imgur.com/fJIyBwn.png);
+    width: 807px;
+    height: 651px;
+    margin-left: 0;
+    margin-top: 0;
+} .xbox .sticks {
+	width: 367px;
+    height: 100px;
+    left: 220px;
+    top: 333px;
+}.xbox .stick {
+    background: url(https://i.imgur.com/nXaGdI2.png);
+    width: 100px;
+    height: 100px;
+} .xbox .stick.pressed {
+    background-position: -102px 0;
+} .xbox .stick.right {
+    top: 0;
+    left: 267px;
+} .xbox .abxy {
+    width: 181px;
+    height: 181px;
+    left: 573px;
+    top: 178px;
+} .xbox .button {
+    background: url(https://i.imgur.com/DVqDSsJ.png);
+    width: 58px;
+    height: 58px;
+} .xbox .button.pressed {
+  	background-position-y: -59px;
+	margin-top: 0;
+} .xbox .a {
+    background-position: 0 0;
+    left: 61px;
+    top: 123px;
+} .xbox .b {
+    background-position: -59px 0;
+    left: 123px;
+    top: 62px;
+} .xbox .x {
+    background-position: -118px 0;
+    left: 0px;
+    top: 61px;
+} .xbox .y {
+    background-position: -177px 0;
+    left: 61px;
+    top: 0px;
+} .xbox .arrows {
+    left: 195px;
+	top: 140px;
+    width: 416px;
+    height: 57px;
+} .xbox .quadrant { 
+    display: none; 
+} .xbox .back, .xbox .start {
+    background: url(https://i.imgur.com/YJRVQxC.png);
+    width: 27px;
+    height: 57px;
+    opacity: 0;
+} .xbox .start {
+    background-position: 27px 0;
+    float: right;
+} .xbox .dpad {
+	width: 144px;
+    height: 144px;
+    left: 71px;
+    top: 196px;
+} .xbox .face {
+    background: url(https://i.imgur.com/hCmzXWK.png);
+    position: absolute;
+    opacity: 0;
+} .xbox .face.up {
+    background-position: 0 -68px;
+    width: 52px;
+    height: 63px;
+    left: 46px;
+} .xbox .face.down {
+    background-position: -54px 63px;
+    width: 52px;
+    height: 63px;
+    left: 46px;
+    top: 81px;
+} .xbox .face.left {
+    background-position: -108px -68px;
+    width: 64px;
+    height: 52px;
+    left: -1px;
+    top: 47px; 
+} .xbox .face.right {
+    background-position: -175px -68px;
+    width: 63px;
+    height: 52px;
+    left: 81px;
+    top: 46px;
+} .xbox .bumpers {
+    width: 620px;
+    height: 35px;
+    left: 93px;
+    top: 114px;
+} .xbox .bumper {
+    background: url(https://i.imgur.com/2YssqRT.png);
+    width: 110px;
+    height: 35px;
+    opacity: 0;
+} .xbox .triggers {
+    width: 619px;
+    height: 108px;
+    left: 94px;
+} .xbox .trigger {
+    background: url(https://i.imgur.com/LsxmGBD.png);
+    width: 111px;
+    height: 108px;
+    opacity: 0;
+} .xbox .trigger.right {
+    background-position: -113px 0;
+	transform: rotateY(0);
 }
-
-/* Face buttons */
-.custom .button.triangle {
-  position:absolute; width:96px; height:96px; top:180px; left:735px;
-  background:url(assets/triangle.png) no-repeat center/contain; opacity:0;
-}
-.custom .button.triangle.pressed { opacity:1; }
-
-.custom .button.circle {
-  position:absolute; width:96px; height:96px; top:230px; left:790px;
-  background:url(assets/circle.png) no-repeat center/contain; opacity:0;
-}
-.custom .button.circle.pressed { opacity:1; }
-
-.controller.ps .button.cross {
-  position:absolute; width:96px; height:96px; top:285px; left:735px;
-  background:url(assets/cross.png) no-repeat center/contain; opacity:0;
-}
-.custom .button.cross.pressed { opacity:1; }
-
-.custom .button.square {
-  position:absolute; width:96px; height:96px; top:230px; left:680px;
-  background:url(assets/square.png) no-repeat center/contain; opacity:0;
-}
-.custom .button.square.pressed { opacity:1; }
-
-/* D-Pad */
-.custom .dpad .up {
-  position:absolute; width:90px; height:90px; top:235px; left:285px;
-  background:url(assets/dpad_up.png) no-repeat center/contain; opacity:0;
-}
-.custom .dpad .up.pressed { opacity:1; }
-
-.custom .dpad .down {
-  position:absolute; width:90px; height:90px; top:330px; left:285px;
-  background:url(assets/dpad_down.png) no-repeat center/contain; opacity:0;
-}
-.custom .dpad .down.pressed { opacity:1; }
-
-.custom .dpad .left {
-  position:absolute; width:90px; height:90px; top:283px; left:235px;
-  background:url(assets/dpad_left.png) no-repeat center/contain; opacity:0;
-}
-.custom .dpad .left.pressed { opacity:1; }
-
-.custom .dpad .right {
-  position:absolute; width:90px; height:90px; top:283px; left:335px;
-  background:url(assets/dpad_right.png) no-repeat center/contain; opacity:0;
-}
-.custom .dpad .right.pressed { opacity:1; }
-
-/* Sticks (click states) */
-.custom .stick.left.pressed {
-  position:absolute; width:96px; height:96px; top:360px; left:365px;
-  background:url(assets/ls.png) no-repeat center/contain; opacity:1;
-}
-.custom .stick.right.pressed {
-  position:absolute; width:96px; height:96px; top:360px; left:610px;
-  background:url(assets/rs.png) no-repeat center/contain; opacity:1;
-}
-
-/* Bumpers & Triggers */
-.custom .bumper.left {
-  position:absolute; width:130px; height:60px; top:95px; left:250px;
-  background:url(assets/l1.png) no-repeat center/contain; opacity:0;
-}
-.custom .bumper.left.pressed { opacity:1; }
-
-.custom .bumper.right {
-  position:absolute; width:130px; height:60px; top:95px; left:720px;
-  background:url(assets/r1.png) no-repeat center/contain; opacity:0;
-}
-.custom .bumper.right.pressed { opacity:1; }
-
-.custom .trigger.left .value {
-  position:absolute; width:130px; height:60px; top:40px; left:250px;
-  background:url(assets/l2.png) no-repeat center/contain; opacity:0;
-}
-.custom .trigger.left.pressed .value { opacity:1; }
-
-.controller.ps .trigger.right .value {
-  position:absolute; width:130px; height:60px; top:40px; left:720px;
-  background:url(assets/r2.png) no-repeat center/contain; opacity:0;
-}
-.custom .trigger.right.pressed .value { opacity:1; }
-
-/* Share / Options */
-.custom .back {
-  position:absolute; width:100px; height:50px; top:215px; left:470px;
-  background:url(assets/share.png) no-repeat center/contain; opacity:0;
-}
-.custom .back.pressed { opacity:1; }
-
-.custom .start {
-  position:absolute; width:110px; height:50px; top:215px; left:560px;
-  background:url(assets/options.png) no-repeat center/contain; opacity:0;
-}
-.custom .start.pressed { opacity:1; }
-
-/* Leaf sparkle overlay when any button is pressed (optional flourish) */
-.custom .pressed::after {
-  content:""; position:absolute; inset:0; background:url(assets/leaf.png) no-repeat 60% 30% / 70px 70px;
-  opacity:.0; transition:opacity .15s ease;
-}
-.custom .pressed.pressed::after { opacity:.85; }
-
-.watermark { display:none !important; }
